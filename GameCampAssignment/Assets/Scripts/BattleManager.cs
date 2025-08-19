@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 
-public class UIManger : MonoBehaviour
+public class BattleManager : MonoBehaviour
 {
     #region 싱글톤 구현
-    private static UIManger instance;
+    private static BattleManager instance;
 
     private void Awake()
     {
@@ -18,8 +18,8 @@ public class UIManger : MonoBehaviour
         }
     }
 
-    public static UIManger Instance
-    {
+    public static BattleManager Instance 
+    { 
         get
         {
             if(instance == null)
@@ -29,7 +29,9 @@ public class UIManger : MonoBehaviour
             return instance;
         }
     }
-#endregion
+    #endregion
 
-    public SpellContainerUI SpellContainerUI;
+    public SpellContainer SpellContainer;
+
+
 }
