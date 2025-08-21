@@ -12,11 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef30fbf0df026c54fb385b83ab9aabfc, type: 3}
   m_Name: Spell Eearth 4
   m_EditorClassIdentifier: 
-  SpellName: Spell Eearth 4
-  SpellRank: 3
-  Element: 1
-  SpellDamage: 15
-  SpellCoolTime: 0.85
-  SpellSpeed: 1.2
-  Projectile: {fileID: 3119408466169761385, guid: 23b593dbc4d16644f91ffda8261ea603, type: 3}
-  PoolingCount: 25
+  ProjectileData:
+    UseThis: 1
+    SpellName: Spell Eearth 4
+    SpellRank: 3
+    Element: 1
+    SpellDamage: 40
+    SpellCoolTime: 1.7
+    SpellSpeed: 1.2
+    Projectile: {fileID: 3119408466169761385, guid: 23b593dbc4d16644f91ffda8261ea603, type: 3}
+    PoolingCount: 25
+  FieldData:
+    UseThis: 0
+    SpellName: 
+    SpellRank: 0
+    Element: 0
+    SpellDamage: 0
+    spellDurationTime: 0
+    DamageCoolTime: 0
+    SpellCoolTime: 0
+    Projectile: {fileID: 0}
+    PoolingCount: 0
+    SpawnYMax: 0
+    SpawnYMin: 0
+  MineData:
+    UseThis: 0
+    SpellName: 
+    SpellRank: 0
+    Element: 0
+    SpellDamage: 0
+    SpellCoolTime: 0
+    Projectile: {fileID: 0}
+    PoolingCount: 0
+    SpawnYMax: 0
+    SpawnYMin: 0

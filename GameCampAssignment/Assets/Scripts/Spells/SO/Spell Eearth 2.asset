@@ -12,11 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef30fbf0df026c54fb385b83ab9aabfc, type: 3}
   m_Name: Spell Eearth 2
   m_EditorClassIdentifier: 
-  SpellName: Spell Eearth 2
-  SpellRank: 1
-  Element: 1
-  SpellDamage: 15
-  SpellCoolTime: 0.85
-  SpellSpeed: 1.2
-  Projectile: {fileID: 8888377349786984632, guid: 3969271de3c71e74d8c7543452336b31, type: 3}
-  PoolingCount: 25
+  ProjectileData:
+    UseThis: 0
+    SpellName: 
+    SpellRank: 0
+    Element: 1
+    SpellDamage: 15
+    SpellCoolTime: 1.7
+    SpellSpeed: 1.2
+    Projectile: {fileID: 0}
+    PoolingCount: 25
+  FieldData:
+    UseThis: 0
+    SpellName: 
+    SpellRank: 0
+    Element: 0
+    SpellDamage: 0
+    spellDurationTime: 0
+    DamageCoolTime: 0
+    SpellCoolTime: 0
+    Projectile: {fileID: 0}
+    PoolingCount: 0
+    SpawnYMax: 0
+    SpawnYMin: 0
+  MineData:
+    UseThis: 1
+    SpellName: Spell Eearth 2
+    SpellRank: 1
+    Element: 1
+    SpellDamage: 30
+    SpellCoolTime: 1.6
+    Projectile: {fileID: 8888377349786984632, guid: 3969271de3c71e74d8c7543452336b31, type: 3}
+    PoolingCount: 20
+    SpawnYMax: 2.61
+    SpawnYMin: -1

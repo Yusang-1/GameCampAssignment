@@ -12,11 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef30fbf0df026c54fb385b83ab9aabfc, type: 3}
   m_Name: Spell Water 1
   m_EditorClassIdentifier: 
-  SpellName: Spell Water 1
-  SpellRank: 0
-  Element: 2
-  SpellDamage: 20
-  SpellCoolTime: 0.7
-  SpellSpeed: 2
-  Projectile: {fileID: 6419273571016366959, guid: 57bfde37bdbe15644b5fa453733d03d4, type: 3}
-  PoolingCount: 15
+  ProjectileData:
+    UseThis: 1
+    SpellName: Spell Water 1
+    SpellRank: 0
+    Element: 2
+    SpellDamage: 20
+    SpellCoolTime: 1.2
+    SpellSpeed: 2
+    Projectile: {fileID: 6419273571016366959, guid: 57bfde37bdbe15644b5fa453733d03d4, type: 3}
+    PoolingCount: 15
+  FieldData:
+    UseThis: 0
+    SpellName: 
+    SpellRank: 0
+    Element: 0
+    SpellDamage: 0
+    spellDurationTime: 0
+    DamageCoolTime: 0
+    SpellCoolTime: 0
+    Projectile: {fileID: 0}
+    PoolingCount: 0
+    SpawnYMax: 0
+    SpawnYMin: 0
+  MineData:
+    UseThis: 0
+    SpellName: 
+    SpellRank: 0
+    Element: 0
+    SpellDamage: 0
+    SpellCoolTime: 0
+    Projectile: {fileID: 0}
+    PoolingCount: 0
+    SpawnYMax: 0
+    SpawnYMin: 0
