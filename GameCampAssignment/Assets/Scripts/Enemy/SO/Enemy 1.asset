@@ -16,6 +16,6 @@ MonoBehaviour:
   EnemyMaxHP: 100
   EnemyAtk: 10
   EnemyAtkSpeed: 1
-  EnemyMoveSpeed: 3
+  EnemyMoveSpeed: 0.85
   Prefab: {fileID: 1139518908409499346, guid: 3e8b0aa5c4555e54ea72bee914c2e527, type: 3}
   CoinDrop: 15
