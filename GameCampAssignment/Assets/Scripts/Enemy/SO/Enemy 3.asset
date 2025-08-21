@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1738c27c03f4a143967d633a3b50830, type: 3}
+  m_Name: Enemy 3
+  m_EditorClassIdentifier: 
+  EnemyName: Enemy 3
+  EnemyMaxHP: 130
+  EnemyAtk: 15
+  EnemyAtkSpeed: 1
+  EnemyMoveSpeed: 3
+  Prefab: {fileID: 7601045266286519178, guid: 69b842e52c366be4e9b2414d138a8684, type: 3}
+  CoinDrop: 35
