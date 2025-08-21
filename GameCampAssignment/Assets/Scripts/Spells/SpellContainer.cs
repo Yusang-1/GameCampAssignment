@@ -6,6 +6,7 @@ public class SpellContainer : MonoBehaviour
     private const int spellRankCount = 6;
 
     [SerializeField] float[] rankProbability;
+    [SerializeField] int spellPrice;
 
     public int[,] SpellCount = new int[spellCount,spellRankCount];
     [SerializeField] SpellSO[] spellsFire;
@@ -19,7 +20,7 @@ public class SpellContainer : MonoBehaviour
     }
 
     public void GetRandomSpell(int lowestRank = 0)
-    {
+    {        
         SpellSO spell;
         SpellContainerUI spellContainerUI = UIManger.Instance.SpellContainerUI;
 
@@ -36,11 +37,17 @@ public class SpellContainer : MonoBehaviour
         {
             spellContainerUI.GetSpellCanPromotion(element, rank);
         }
+
+        BattleManager.Instance.Player.AddSpell(spellSOs[element][rank]);
     }
 
     public void SpellPromotion(int row, int column)
     {
         SpellCount[row, column] -= 3;
+        if (SpellCount[row, column] == 0)
+        {
+            BattleManager.Instance.Player.RemoveSpell(spellSOs[row][column]);
+        }
     }
 
     public int GetRank(int lowestRank)
@@ -54,7 +61,6 @@ public class SpellContainer : MonoBehaviour
 
             if(i >= lowestRank && randNum <= compareNum)
             {
-                Debug.Log($"randNum : {randNum}, rank : {i}");
                 return i;
             }
         }
