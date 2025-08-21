@@ -18,11 +18,12 @@ public class SpellContainerUI : MonoBehaviour
     [SerializeField] Button[] buttonSpell2;
     [SerializeField] Button[] buttonSpell3;
     private Button[][] promotionButtons;
-    private void Start()
+
+    public void GetBattleUI()
     {
         imageSpells = new Image[][] { imageSpell1, imageSpell2, imageSpell3 };
         textSpells = new TextMeshProUGUI[][] { textSpell1, textSpell2, textSpell3 };
-        promotionButtons = new Button[][] {buttonSpell1, buttonSpell2, buttonSpell3 };
+        promotionButtons = new Button[][] { buttonSpell1, buttonSpell2, buttonSpell3 };
     }
 
     public void UpdateSpellUI()
@@ -39,7 +40,7 @@ public class SpellContainerUI : MonoBehaviour
                 }
                 else
                 {
-                    imageSpells[i][j].color = Color.blue;
+                    imageSpells[i][j].color = Color.white;
                 }
 
                 textSpells[i][j].text = spellCount[i, j].ToString();

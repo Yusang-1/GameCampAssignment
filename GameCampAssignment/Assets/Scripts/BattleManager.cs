@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class BattleManager : MonoBehaviour
 {
@@ -38,7 +37,10 @@ public class BattleManager : MonoBehaviour
 
     private void Start()
     {
-        UIManger.Instance.TurnBattleUI(true);
+        UIManger uIManger = UIManger.Instance;
+        uIManger.TurnBattleUI(true);
+        uIManger.SpellContainerUI.GetBattleUI();
+        uIManger.SpellContainerUI.UpdateSpellUI();
         I_Player = Player.PlayerData;
         GetCoin(initialCoin);
         StageManager.Instance.StartNewStage();
@@ -67,6 +69,6 @@ public class BattleManager : MonoBehaviour
     public void ExitBattle()
     {
         UIManger.Instance.TurnBattleUI(false);
-        SceneManager.LoadScene("Title", LoadSceneMode.Single);
+        GameManager.Instance.LoadTitleScene();
     }
 }

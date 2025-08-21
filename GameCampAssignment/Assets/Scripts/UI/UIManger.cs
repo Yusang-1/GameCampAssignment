@@ -1,6 +1,5 @@
-﻿using TMPro;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
+using TMPro;
 
 public class UIManger : MonoBehaviour
 {
@@ -65,11 +64,11 @@ public class UIManger : MonoBehaviour
     public void OnClickReturn()
     {
         BattleManager.Instance.ExitBattle();
+        gameOverPanel.SetActive(false);
     }
 
     public void OnClickStart()
     {
-        Debug.Log(1);
-        SceneManager.LoadScene("Battle");
+        GameManager.Instance.LoadBattleScene();
     }
 }
