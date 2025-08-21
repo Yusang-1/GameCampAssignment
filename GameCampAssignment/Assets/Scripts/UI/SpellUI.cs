@@ -4,7 +4,7 @@ public class SpellUI : MonoBehaviour
 {
     public void OnClickMakeSpell()
     {
-        BattleManager.Instance.SpellContainer.GetRandomSpell();
+        BattleManager.Instance.GetRandomSpell();
     }
 
     public void OnClickOpenReinforce()

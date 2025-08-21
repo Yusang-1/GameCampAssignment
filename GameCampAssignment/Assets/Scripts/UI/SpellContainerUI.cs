@@ -52,7 +52,7 @@ public class SpellContainerUI : MonoBehaviour
         promotionButtons[row][column].enabled = true;
     }
 
-    public void OnClickPromotionSpell(Spell spell)
+    public void OnClickPromotionSpell(SpellIndex spell)
     {
         SpellContainer spellContainer = BattleManager.Instance.SpellContainer;
 
