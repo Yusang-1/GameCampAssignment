@@ -17,7 +17,7 @@ public class Projectile : MonoBehaviour
         CheckDeadPoint();
     }
 
-    public void InitData(SpellData spellData, Vector2 spawnPos)
+    public void InitData(SpellProjectileData spellData, Vector2 spawnPos)
     {
         damage = spellData.SpellDamage;
         speed = spellData.SpellSpeed;
@@ -31,11 +31,6 @@ public class Projectile : MonoBehaviour
         deltaTime = Time.deltaTime;
         position.y -= speed * deltaTime;
         gameObject.transform.position = position;
-    }
-
-    private void GetHit()
-    {
-
     }
 
     private void CheckDeadPoint()
