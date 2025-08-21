@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManger : MonoBehaviour
 {
@@ -29,7 +31,45 @@ public class UIManger : MonoBehaviour
             return instance;
         }
     }
-#endregion
+    #endregion
+
+    [SerializeField] GameObject BattleUI;
+    [SerializeField] GameObject TitleUI;
 
     public SpellContainerUI SpellContainerUI;
+    [SerializeField] TextMeshProUGUI stageText;
+    [SerializeField] TextMeshProUGUI coinText;
+    [SerializeField] GameObject gameOverPanel;
+
+    public void TurnBattleUI(bool value)
+    {
+        BattleUI.SetActive(value);
+        TitleUI.SetActive(!value);
+    }
+
+    public void NextStage(int stageIndex)
+    {
+        stageText.text = stageIndex.ToString();
+    }
+
+    public void UpdateCoinText(int amount)
+    {
+        coinText.text = amount.ToString();
+    }
+
+    public void TurnGameOverPanel(bool value)
+    {
+        gameOverPanel.SetActive(value);
+    }
+
+    public void OnClickReturn()
+    {
+        BattleManager.Instance.ExitBattle();
+    }
+
+    public void OnClickStart()
+    {
+        Debug.Log(1);
+        SceneManager.LoadScene("Battle");
+    }
 }
