@@ -15,3 +15,8 @@ MonoBehaviour:
   SpellName: Spell Eearth 5
   SpellRank: 4
   Element: 1
+  SpellDamage: 15
+  SpellCoolTime: 0.85
+  SpellSpeed: 1.2
+  Projectile: {fileID: 1262284628312941923, guid: 78bd93e89eb53244e8dd93c5eaf0c85c, type: 3}
+  PoolingCount: 25

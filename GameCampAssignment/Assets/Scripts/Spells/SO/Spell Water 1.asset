@@ -15,3 +15,8 @@ MonoBehaviour:
   SpellName: Spell Water 1
   SpellRank: 0
   Element: 2
+  SpellDamage: 20
+  SpellCoolTime: 0.7
+  SpellSpeed: 2
+  Projectile: {fileID: 6419273571016366959, guid: 57bfde37bdbe15644b5fa453733d03d4, type: 3}
+  PoolingCount: 15

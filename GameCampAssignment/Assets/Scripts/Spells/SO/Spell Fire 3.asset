@@ -15,3 +15,8 @@ MonoBehaviour:
   SpellName: Spell Fire 3
   SpellRank: 2
   Element: 0
+  SpellDamage: 40
+  SpellCoolTime: 1
+  SpellSpeed: 1.6
+  Projectile: {fileID: 7036717270820613647, guid: 730f898f953857342b0b6d966fb94062, type: 3}
+  PoolingCount: 20

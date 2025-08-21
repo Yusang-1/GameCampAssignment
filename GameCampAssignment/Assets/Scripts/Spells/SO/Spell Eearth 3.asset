@@ -15,3 +15,8 @@ MonoBehaviour:
   SpellName: Spell Eearth 3
   SpellRank: 2
   Element: 1
+  SpellDamage: 15
+  SpellCoolTime: 0.85
+  SpellSpeed: 1.2
+  Projectile: {fileID: 8453062266519112940, guid: 257426ffe28fb5f489e5d7dc808afcd4, type: 3}
+  PoolingCount: 25
